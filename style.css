@@ -8,3 +8,11 @@
     display: flex; 
     align-items: center;
 }
+.flex-container {
+    display: flex;
+}
+#evaluation-form {
+    width: 675px;
+    /* 6. Faça com que a direção do formulário seja vertical. */
+    flex-direction: column;
+}
