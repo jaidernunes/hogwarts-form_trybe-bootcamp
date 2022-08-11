@@ -16,6 +16,7 @@
 
 #evaluation-form {
   width: 675px;
+  min-width: 675px;
 
   /* 6. Faça com que a direção do formulário seja vertical. */
   flex-direction: column;
