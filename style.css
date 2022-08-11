@@ -16,3 +16,6 @@
     /* 6. Faça com que a direção do formulário seja vertical. */
     flex-direction: column;
 }
+#trybewarts-forms-logo {
+    height: 500px;
+}
