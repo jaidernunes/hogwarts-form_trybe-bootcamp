@@ -3,7 +3,10 @@ const loginButton = document.querySelector('button');
 const inputEmail = document.querySelectorAll('input')[0];
 const inputPassword = document.querySelectorAll('input')[1];
 loginButton.addEventListener('click', () => {
-  if (inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456') {
+  if (
+    inputEmail.value === 'tryber@teste.com'
+    && inputPassword.value === '123456'
+  ) {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
@@ -17,3 +20,10 @@ function textCounter() {
   count.innerText = counter;
 }
 textCounter();
+
+const submitBtn = document.querySelector('#submit-btn');
+const agreementCheck = document.querySelector('#agreement');
+
+agreementCheck.addEventListener('click', () => {
+  submitBtn.toggleAttribute('disabled');
+});
