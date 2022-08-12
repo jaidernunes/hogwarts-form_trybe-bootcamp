@@ -1,138 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- 1. Crie uma barra verde na parte superior da página. -->
     <header class="header">
-        <!-- 2. Adicione o logotipo da Trybewarts.     -->
-        <img src="images/trybewarts-header-logo.svg" alt="trywarts logo" class="trybewarts-header-logo">
+      <!-- 2. Adicione o logotipo da Trybewarts.     -->
+      <img
+        src="images/trybewarts-header-logo.svg"
+        alt="trywarts logo"
+        class="trybewarts-header-logo"
+      />
 
-        <!-- 4. Crie um título com o texto "Trybewarts" centralizado dentro do Header. -->
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <!-- 4. Crie um título com o texto "Trybewarts" centralizado dentro do Header. -->
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-        <!-- 3. Acrescente um formulário de login no header. -->
-        <form action="" class="trybewarts-login">
-            <input type="text" placeholder="Email" name="email" />
-            <input type="text" placeholder="Senha" name="password" />
-            <button>Entrar</button>
-        </form>
-
+      <!-- 3. Acrescente um formulário de login no header. -->
+      <form action="" class="trybewarts-login">
+        <input type="text" placeholder="Email" name="email" />
+        <input type="text" placeholder="Senha" name="password" />
+        <button>Entrar</button>
+      </form>
     </header>
 
     <!-- 5. Adicione um formulário no corpo da página. -->
     <main class="flex-container">
-        <form action="" class="flex-container" id="evaluation-form">
-            <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário -->
-            <!-- 10. Posicione os campos de Nome e Sobrenome lado a lado. -->
-            <div class="flex-container">
-                <input type="text" id="input-name" placeholder="Nome">
-                <input type="text" id="input-lastname" placeholder="Sobrenome">
-            </div>
-            <!-- 11. Posicione os campos de Email e Casa lado a lado. -->
-            <div class="flex-container">
-                <input type="text" id="input-email" placeholder="Email">
-                <!-- 9. Acrescente um select ao formulário. -->
-                <select name="house" id="house">
-                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                </select>
-            </div>
+      <form action="" class="flex-container" id="evaluation-form">
+        <!-- 8. Acrescente inputs de nome, sobrenome e email ao formulário -->
+        <!-- 10. Posicione os campos de Nome e Sobrenome lado a lado. -->
+        <div class="flex-container">
+          <input type="text" id="input-name" placeholder="Nome" />
+          <input type="text" id="input-lastname" placeholder="Sobrenome" />
+        </div>
+        <!-- 11. Posicione os campos de Email e Casa lado a lado. -->
+        <div class="flex-container">
+          <input type="text" id="input-email" placeholder="Email" />
+          <!-- 9. Acrescente um select ao formulário. -->
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
 
-            <!-- Adicione 3 inputs do tipo radio ao formulário. -->
-            <div class="flex-container row">
-                <label for="family" id="label-family">Qual sua família?</label>
-                    <label for="family">
-                        <input type="radio" name="family" id="" value="Frontend" />
-                        Frontend</label>
-                    <label for="family">
-                        <input type="radio" name="family" id="" value="Backend" />
-                        Backend</label>
-                    <label for="family">
-                        <input type="radio" name="family" id="" value="FullStack" />
-                        Fullstack</label>
-            </div>
+        <!-- Adicione 3 inputs do tipo radio ao formulário. -->
+        <div class="flex-container row">
+          <label for="family" id="label-family">Qual sua família?</label>
+          <label for="family">
+            <input type="radio" name="family" id="" value="Frontend" />
+            Frontend</label
+          >
+          <label for="family">
+            <input type="radio" name="family" id="" value="Backend" />
+            Backend</label
+          >
+          <label for="family">
+            <input type="radio" name="family" id="" value="FullStack" />
+            Fullstack</label
+          >
+        </div>
 
-            <!-- 13. Crie inputs do tipo checkbox. -->
-            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                <input type="checkbox" class="subject" value="HoFs">HoFs
-                <input type="checkbox" class="subject" value="Jest">Jest
-                <input type="checkbox" class="subject" value="Promises">Promises
-                <input type="checkbox" class="subject" value="React">React
-                <input type="checkbox" class="subject" value="SQL">SQL
-                <input type="checkbox" class="subject" value="Python">Python
-            
-            <!-- 14. Crie um campo de avaliação.     -->
-            <label for="rate" id="label-rate">
-                Como você avalia a Trybewarts?
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="1" />1</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="2" />2</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="3" />3</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="4" />4</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="5" />5</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="6" />6</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="7" />7</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="8" />8</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="9" />9</label
-                >
-                <label for="rate"
-                  ><input type="radio" name="rate" id="" value="10" />10</label
-                >
-            </label>
+        <!-- 13. Crie inputs do tipo checkbox. -->
+        <label id="label-content"
+          >Qual conteúdo você está com mais vontade de aprender?</label
+        >
+        <input type="checkbox" class="subject" value="HoFs" />HoFs
+        <input type="checkbox" class="subject" value="Jest" />Jest
+        <input type="checkbox" class="subject" value="Promises" />Promises
+        <input type="checkbox" class="subject" value="React" />React
+        <input type="checkbox" class="subject" value="SQL" />SQL
+        <input type="checkbox" class="subject" value="Python" />Python
 
-            <!-- 15. Crie uma textarea. -->
-            <label class="textarea" for="textarea">Deixe seu comentário:</label>
-            <textarea
-                name="textarea"
-                id=""
-                maxlength="500"
-                cols="30"
-                rows="10"
-            ></textarea>
+        <!-- 14. Crie um campo de avaliação.     -->
+        <label for="rate" id="label-rate">
+          Como você avalia a Trybewarts?
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="1" />1</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="2" />2</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="3" />3</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="4" />4</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="5" />5</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="6" />6</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="7" />7</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="8" />8</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="9" />9</label
+          >
+          <label for="rate"
+            ><input type="radio" name="rate" id="" value="10" />10</label
+          >
+        </label>
 
-            <!-- 16. Crie uma checkbox que servirá para validar as informações digitadas pela pessoa usuária. -->
-            <fieldset>
-                <label for="agreement" id="label-infos">
-                  Você concorda com o uso das informações acima?
-                  <input type="checkbox" name="agreement" id="agreement" />
-                </label>
-            </fieldset>
+        <!-- 15. Crie uma textarea. -->
+        <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <textarea
+          name="textarea"
+          id=""
+          maxlength="500"
+          cols="30"
+          rows="10"
+        ></textarea>
 
-            <!-- 17. Crie um botão de "Enviar" para submeter o formulário. -->
-            <button type="submit" id="submit-btn">Enviar</button>
-        </form>
+        <!-- 16. Crie uma checkbox que servirá para validar as informações digitadas pela pessoa usuária. -->
+        <fieldset>
+          <label for="agreement" id="label-infos">
+            Você concorda com o uso das informações acima?
+            <input type="checkbox" name="agreement" id="agreement" />
+          </label>
+        </fieldset>
 
-        <!-- 7. Adicione a logo da Trybewarts ao lado direito da página -->
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts school shield">
+        <!-- 17. Crie um botão de "Enviar" para submeter o formulário. -->
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </form>
+
+      <!-- 7. Adicione a logo da Trybewarts ao lado direito da página -->
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="trybewarts school shield"
+      />
     </main>
 
     <!-- 19. Crie um rodapé ao final da página. -->
     <footer>Direitos reservados à Trybewarts©</footer>
-    
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
