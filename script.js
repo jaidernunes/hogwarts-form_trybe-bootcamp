@@ -30,3 +30,11 @@ agreementCheck.addEventListener('click', () => {
 //   count.innerText = `Counter: ${counter}`;
 //   console.log(inputLength);
 // }
+const textarea1 = document.querySelector('#textarea');
+const count = document.getElementById('counter');
+function keycounter() {
+  const inputLength = textarea1.value.length;
+  console.log(inputLength);
+  count.innerHTML = `${500 - inputLength} characters left.`;
+}
+keycounter();
