@@ -13,18 +13,20 @@ loginButton.addEventListener('click', () => {
   }
 });
 
-const count = document.getElementById('counter');
-const textarea500 = document.getElementById('textarea500');
-function textCounter() {
-  let counter = 500;
-  counter -= textarea500.value.length;
-  count.innerText = `Counter: ${counter}`;
-}
-textCounter();
-
 const submitBtn = document.querySelector('#submit-btn');
 const agreementCheck = document.querySelector('#agreement');
 
 agreementCheck.addEventListener('click', () => {
   submitBtn.toggleAttribute('disabled');
 });
+
+// const count = document.getElementById('counter');
+// const textarea500 = document.getElementById('textarea500');
+// // eslint-disable-next-line no-unused-vars
+// function textCounter(e) {
+//   let counter = 500;
+//   const { inputLength } = textarea500.value;
+//   counter -= inputLength;
+//   count.innerText = `Counter: ${counter}`;
+//   console.log(inputLength);
+// }
