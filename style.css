@@ -2,7 +2,12 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+}
 
+#trybewarts-header-title {
+  display: flex;
+  align-items: center;
+  font-size: 70px;
 }
 
 .trybewarts-login {
@@ -26,8 +31,19 @@
   flex-direction: column;
 }
 
+#form-data {
+  flex-basis: 675px;
+  flex-direction: column;
+  order: 1;
+  text-align: center;
+  align-self: center;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+  order: 2;
 }
 
 #label-rate {
