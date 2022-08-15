@@ -20,16 +20,7 @@ agreementCheck.addEventListener('click', () => {
   submitBtn.toggleAttribute('disabled');
 });
 
-// const count = document.getElementById('counter');
-// const textarea500 = document.getElementById('textarea500');
-// // eslint-disable-next-line no-unused-vars
-// function textCounter(e) {
-//   let counter = 500;
-//   const { inputLength } = textarea500.value;
-//   counter -= inputLength;
-//   count.innerText = `Counter: ${counter}`;
-//   console.log(inputLength);
-// }
+// 20. Crie um contador de caracteres.
 const textarea1 = document.querySelector('#textarea');
 const count = document.getElementById('counter');
 function keycounter() {
